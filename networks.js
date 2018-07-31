@@ -7,23 +7,23 @@ var hex = function(hex) {
 exports.livenet = {
   name: 'livenet',
   magic: hex('e5777746'),
-  addressVersion: 53,
-  privKeyVersion: 181,
-  P2SHVersion: 112,
+  addressVersion: 63,
+  privKeyVersion: 191,
+  P2SHVersion: 85,
   hkeyPublicVersion: 0x0,
   hkeyPrivateVersion: 0x0,
   genesisBlock: {
-    hash: hex('00000da3701e9b6eb1afa31d97ce6fc2c09cb7e165271b2e900a4275df8dd5bb'),
-    merkle_root: hex('0a8875e41a01a01dd0f1c759d5da353ee92561c089d19ef939510d6eda44c096'),
+    hash: hex('00000e8764361b521a70a2d3626821eb0880fa34f7f06a7d0f5e813245e7b686'),
+    merkle_root: hex('314633ec233def31d92a686b3529a740f6a140703ee2390eafba27347d869640'),
     height: 0,
-    nonce: 0,
+    nonce: 6798524,
     version: 1,
     prev_hash: buffertools.fill(new Buffer(32), 0),
-    timestamp: 1511862256,
+    timestamp: 1524023167,
     bits: 0x1e0fffff,
   },
   dnsSeeds: [
-    'dnsseed.neetcoin.jp'
+    'dnsseed.sandego.net'
   ],
   defaultClientPort: 21011
 };
