@@ -6,26 +6,31 @@ var hex = function(hex) {
 
 exports.livenet = {
   name: 'livenet',
-  magic: hex('e5777746'),
-  addressVersion: 63,
-  privKeyVersion: 191,
-  P2SHVersion: 85,
-  hkeyPublicVersion: 0x0,
-  hkeyPrivateVersion: 0x0,
+  magic: hex('eeaeeacc'),
+  addressVersion: 100,
+  privKeyVersion: 228,
+  P2SHVersion: 40,
+  hkeyPublicVersion: 0x0488b21e,
+  hkeyPrivateVersion: 0x0488ade4,
   genesisBlock: {
-    hash: hex('00000e8764361b521a70a2d3626821eb0880fa34f7f06a7d0f5e813245e7b686'),
-    merkle_root: hex('314633ec233def31d92a686b3529a740f6a140703ee2390eafba27347d869640'),
-    height: 0,
-    nonce: 6798524,
-    version: 1,
+    hash: hex('d3a88f5bb224f954e60a83b82d72cae37cea492a0352327f73c099013d3e756b'),
+    merkle_root: hex('bf452b7929b945b2524e2e729a949c4abc831cbbd95037e54d6ddd6853d6c804'),
+    height: 791648,
+    nonce: 1460627716,
+    version: 2,
     prev_hash: buffertools.fill(new Buffer(32), 0),
-    timestamp: 1524023167,
-    bits: 0x1e0fffff,
+    timestamp: 1646805992,
+    bits: 0x1d033acd,
   },
   dnsSeeds: [
-    'dnsseed.sandego.net'
+     '73.150.182.108',
+    '155.138.198.71',
+    '67.166.253.246',
+    '82.27.145.78',
+    '80.211.84.246',
+    '62.171.128.133'
   ],
-  defaultClientPort: 21011
+  defaultClientPort: 65000
 };
 
 exports.mainnet = exports.livenet;
